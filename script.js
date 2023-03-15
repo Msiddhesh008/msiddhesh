@@ -25,6 +25,28 @@ $(".hero_section").each(function (index) {
   });
 });
 
+// her-title Animation
+$(".hero_section").each(function (index) {
+  let triggerElement = $(this);
+  let targetElement = $(".hero_title");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      // trigger element - viewport
+      start: "top top",
+      end: "bottom top",
+      scrub: 1.5,
+    },
+  });
+  tl.from(targetElement, {
+    x: "56%",
+    y:"-150%",
+    duration: 3,
+  });
+});
+
+
 // text Animation
 $(".text_wrap h1").each(function (index) {
   let triggerElement = $(this);
@@ -54,7 +76,7 @@ $(".sticky--circle").each(function (index) {
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
-      start: "top center",
+      start: "top top",
       end: "bottom bottom",
       scrub: 1,
     },
