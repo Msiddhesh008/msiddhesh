@@ -54,7 +54,7 @@ $(".sticky--circle").each(function (index) {
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
-      start: "top top",
+      start: "top center",
       end: "bottom bottom",
       scrub: 1,
     },
