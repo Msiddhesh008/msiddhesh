@@ -326,19 +326,32 @@ li{
 
 
 
-/* .cursor{
-    z-index: 5;
+.cursor {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
     position: fixed;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #fff;
-    transition: 0.1s;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 3;
+    
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* opacity: .3; */
+    position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 3;
+    background-color: #fff;
     mix-blend-mode: difference;
-  } */
+  }
   
-  /* .scrollMe:hover ~ .cursor{
-    transform: scale(3);
-  } */
