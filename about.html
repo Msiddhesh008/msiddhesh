@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        cursor: none;
+      }
+      .about_section {
+        padding: 2rem;
+        width: 60%;
+        height: auto;
+        display: flex;
+      }
+      .intro {
+        padding: 1rem;
+        width: 50%;
+        height: 100vh;
+        background-color: #000;
+        color: #e7e1d9;
+        font-family: "Righteous", cursive;
+      }
+
+      .about_title {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .about_title p {
+        color: #000;
+        transform: rotateZ(270deg);
+        font-size: 11rem;
+        font-weight: 400;
+        font-family: "Righteous", cursive;
+      }
+
+      .about_title:hover ~ .cursor {
+        transform: scale(3);
+      }
+
+      .cursor {
+        z-index: 5;
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        transition: 0.1s;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+      }
+
+      
+
+    </style>
+
+    <title>About</title>
+  </head>
+  <body style="background-color: #e7e1d9; color: #2e2a27">
+    <p class="cursor"></p>
+
+    <section class="main_wrapper container-fluid">
+      <ul style="background-color: #e7e1d9">
+        <li><a href="index.html">Home</a></li>
+        <li class="is--large">SM</li>
+        <li class="rights">Contact</li>
+      </ul>
+      <div class="about_section">
+        <div class="intro">
+          <h1
+            style="
+              font-weight: 400;
+              font-size: 3.5rem;
+              font-family: 'Righteous', cursive;
+            "
+          >
+            SIDDHESH MORE
+          </h1>
+        </div>
+        <div class="about_title">
+          <p>ABOUT</p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      // ===[ Corsor ]===
+
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+      });
+    </script>
+  </body>
+</html>
