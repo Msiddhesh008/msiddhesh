@@ -87,12 +87,14 @@ $(".sticky--circle").each(function (index) {
       width: "25rem",
       height: "20rem",
       borderRadius: "1rem",
+      filter: "sepia(90%)",
       duration: 1,
     },
     {
       width: "95%",
       height: "100vh",
       borderRadius: "0rem",
+      filter: "sepia(0%)",
       duration: 1,
     }
   );
