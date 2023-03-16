@@ -126,6 +126,7 @@ li{
     width: 25rem;
     height: 20rem;
     border-radius: 1rem;
+    filter: sepia(90%);
 }
 
 .about{
