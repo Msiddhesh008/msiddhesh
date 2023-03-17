@@ -36,6 +36,7 @@ body{
     margin-top: 16rem;
     font-size: 7rem;
     font-weight: 900;
+    border: none; /* taking borber from techstack h1 */
     color: #032e30;
     text-shadow: -1px 1px 0 #e7e1d9,
                   1px 1px 0 #e7e1d9,
@@ -126,7 +127,6 @@ li{
 
 .about{
     /* background-color: blue; */
-    margin-bottom: 14rem;
     margin-top: 4rem;
     width: 100%;
     display: flex;
@@ -136,6 +136,28 @@ li{
 }
 .about__text{
     margin: 1rem 2rem;
+}
+
+.tech__stack{
+    width: 95%;
+    padding: 0 3rem;
+    margin-bottom: 14rem;
+    color: #e7e1d9;
+    background-color: #032e30;
+    border-radius: 0.5rem;
+}
+.tech__stack h2,.tech__stack h1{
+    display: flex;
+    margin: 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e7e1d9;
+}
+.tech__stack h1{
+    font-size: 4rem;
+}
+.arrow{
+    padding: 1rem;
+    font-size: 3rem;
 }
 
 
@@ -268,27 +290,7 @@ li{
 .grid--wrapper .img-4{
     transform: translateY(1rem) ;
 }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -306,25 +308,7 @@ li{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .cursor {
     width: 80px;
@@ -354,4 +338,21 @@ li{
     background-color: #fff;
     mix-blend-mode: difference;
   }
+
+
+  .hover {
+    width: 80px;
+    height: 80px;
+  }
+
+  .loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e2a27;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+  }
+  
   
