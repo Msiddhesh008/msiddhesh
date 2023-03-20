@@ -108,7 +108,7 @@ $(".grid--wrapper:nth-child(odd)").each(function (index) {
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
-      start: "top top",
+      start: "top center",
       end: "bottom bottom",
       scrub: 2,
     },
@@ -139,7 +139,7 @@ $(".sticky--circle, .grid--wrapper:nth-child(even)").each(function (index) {
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
-      start: "top top",
+      start: "top center",
       end: "bottom bottom",
       scrub: 2,
     },
@@ -174,7 +174,7 @@ $(".grid--wrapper").each(function (index) {
     scrollTrigger: {
       trigger: triggerElement,
       // trigger element - viewport
-      start: "top bottom",
+      start: "top center",
       end: "bottom bottom",
       onEnter: () => {
         $(".titleItem").removeClass("active");
