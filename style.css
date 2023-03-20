@@ -172,35 +172,31 @@ li{
 }
 
 .grid--wrapper .img-1{
-    width: 16rem;
-    margin: 1rem;
+    width: 24rem;
+    margin: 1.5rem;
     transform: translateY(-3rem);
     object-fit: cover;
     border-radius: 0.5rem;
+    transition: 0.8s;
 }
 
 .grid--wrapper .img-2{
-    width: 14rem;
+    width: 22rem;
     margin: 1.5rem;
-    transform: translateY(8rem);
+    transform: translateY(16rem);
     object-fit: cover;
     border-radius: 0.5rem;
+    transition: 0.8s;
 }
 
 .grid--wrapper .img-3{
-    width: 20rem;
-    margin: 2rem;
+    width: 24rem;
+    margin: 1.5rem;
     transform: translateY(4rem);
     object-fit: cover;
     border-radius: 0.5rem;
-}
+    transition: 0.8s;
 
-.grid--wrapper .img-4{
-    width: 16rem;
-    margin: 1rem;
-    transform: translateY(10rem) ;
-    object-fit: cover;
-    border-radius: 0.5rem;
 }
 
 .grid_container{
