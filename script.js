@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
-  markers: false,
+  markers: true,
 });
 
 // Logo Animation
